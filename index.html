@@ -1,0 +1,1275 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Сайти для бізнесу під ключ | Веб-студія</title>
+    <meta name="description" content="Готові сайти для кафе, салонів, СТО та іншого бізнесу. Від 4000 ₴. Термін — 1-3 дні.">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Сайти для бізнесу під ключ">
+    <meta property="og:description" content="Готові лендінги та сайти-візитки. Адаптивні. Без конструкторів.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://твой-домен.com">
+    
+    <!-- Favicon W -->
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='48' fill='none' stroke='%23c87941' stroke-width='2.5'/%3E%3Ccircle cx='50' cy='50' r='36' fill='none' stroke='%23c87941' stroke-width='1.2'/%3E%3Ctext x='50' y='66' text-anchor='middle' fill='%23c87941' font-size='40' font-family='Georgia,%20Times%20New%20Roman,%20serif' font-weight='bold'%3EAN%3C/text%3E%3Ctext x='50' y='24' text-anchor='middle' fill='%23c87941' font-size='11' font-family='monospace' font-weight='bold'%3E%26lt%3B/%26gt%3B%3C/text%3E%3Ctext x='50' y='88' text-anchor='middle' fill='%23c87941' font-size='11' font-family='monospace' font-weight='bold'%3E%26lt%3B/%26gt%3B%3C/text%3E%3Ccircle cx='22' cy='50' r='2.5' fill='none' stroke='%23c87941' stroke-width='1.5'/%3E%3Cline x1='25' y1='50' x2='32' y2='50' stroke='%23c87941' stroke-width='1.5'/%3E%3Ccircle cx='78' cy='50' r='2.5' fill='none' stroke='%23c87941' stroke-width='1.5'/%3E%3Cline x1='68' y1='50' x2='75' y2='50' stroke='%23c87941' stroke-width='1.5'/%3E%3C/svg%3E">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --bg: #0a0a0c;
+            --bg-card: #141418;
+            --bg-light: #111114;
+            --surface: #1a1a20;
+            --text: #f0ece4;
+            --text-muted: #8a8580;
+            --accent: #c87941;
+            --accent-light: #e0955a;
+            --border: #222228;
+            --border-light: #2e2e36;
+            --radius: 16px;
+            --success: #4ade80;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+        html { scroll-behavior: smooth; }
+        
+        body {
+            font-family: 'Inter', -apple-system, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        ::-webkit-scrollbar { width: 5px; }
+        ::-webkit-scrollbar-track { background: var(--bg); }
+        ::-webkit-scrollbar-thumb { background: var(--border-light); border-radius: 10px; }
+
+        /* ===== ANIMATIONS ===== */
+        @keyframes fadeUp {
+            from { opacity: 0; transform: translateY(40px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes slideInLeft {
+            from { opacity: 0; transform: translateX(-60px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+        @keyframes pulse {
+            0%, 100% { box-shadow: 0 0 0 0 rgba(200,121,65,0.3); }
+            50% { box-shadow: 0 0 0 16px rgba(200,121,65,0); }
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+        }
+        @keyframes gradientShift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        @keyframes blobMove {
+            0% { transform: translate(0, 0) scale(1); }
+            33% { transform: translate(30px, -50px) scale(1.1); }
+            66% { transform: translate(-20px, 20px) scale(0.9); }
+            100% { transform: translate(0, 0) scale(1); }
+        }
+        @keyframes borderGlow {
+            0%, 100% { border-color: rgba(200,121,65,0.2); }
+            50% { border-color: rgba(200,121,65,0.6); }
+        }
+        @keyframes urgentPulse {
+            0%, 100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(200,121,65,0.3); }
+            50% { transform: scale(1.02); box-shadow: 0 0 0 8px rgba(200,121,65,0); }
+        }
+        @keyframes checkmark {
+            0% { transform: scale(0) rotate(-45deg); }
+            50% { transform: scale(1.2) rotate(-45deg); }
+            100% { transform: scale(1) rotate(-45deg); }
+        }
+        @keyframes modalIn {
+            from { opacity: 0; transform: scale(0.8) translateY(20px); }
+            to { opacity: 1; transform: scale(1) translateY(0); }
+        }
+        @keyframes overlayIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        /* Scroll reveal */
+        .reveal {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .reveal.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .reveal-left {
+            opacity: 0;
+            transform: translateX(-60px);
+            transition: all 0.9s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .reveal-left.visible {
+            opacity: 1;
+            transform: translateX(0);
+        }
+        .reveal-right {
+            opacity: 0;
+            transform: translateX(60px);
+            transition: all 0.9s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .reveal-right.visible {
+            opacity: 1;
+            transform: translateX(0);
+        }
+        .stagger-1 { transition-delay: 0.1s; }
+        .stagger-2 { transition-delay: 0.2s; }
+        .stagger-3 { transition-delay: 0.3s; }
+        .stagger-4 { transition-delay: 0.4s; }
+
+        /* ===== NAV ===== */
+        nav {
+            position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+            padding: 0 20px; height: 68px;
+            display: flex; align-items: center; justify-content: space-between;
+            background: transparent; transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        nav.scrolled {
+            background: rgba(10,10,12,0.85); 
+            backdrop-filter: blur(24px) saturate(1.2);
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+        }
+        .logo {
+            font-size: 20px; font-weight: 800; letter-spacing: -0.5px;
+            display: flex; align-items: center; gap: 10px; color: var(--text); text-decoration: none;
+            transition: transform 0.3s;
+        }
+        .logo:hover { transform: scale(1.02); }
+        .logo-icon {
+            width: 38px; height: 38px; display: flex; align-items: center; justify-content: center;
+            flex-shrink: 0;
+        }
+        .logo-icon svg {
+            width: 100%; height: 100%;
+            filter: drop-shadow(0 0 8px rgba(200,121,65,0.3));
+            transition: filter 0.3s;
+        }
+        .logo:hover .logo-icon svg {
+            filter: drop-shadow(0 0 16px rgba(200,121,65,0.5));
+        }
+        .nav-links { display: none; gap: 28px; list-style: none; }
+        .nav-links a {
+            color: var(--text-muted); text-decoration: none; font-size: 13px;
+            font-weight: 500; text-transform: uppercase; letter-spacing: 1px;
+            transition: all 0.3s; cursor: pointer;
+            position: relative;
+        }
+        .nav-links a::after {
+            content: ''; position: absolute; bottom: -4px; left: 0;
+            width: 0; height: 2px; background: var(--accent);
+            transition: width 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .nav-links a:hover { color: var(--text); }
+        .nav-links a:hover::after { width: 100%; }
+        .nav-cta {
+            display: none; background: var(--accent); color: #fff;
+            padding: 10px 22px; border-radius: 100px; font-size: 13px;
+            font-weight: 700; text-decoration: none; transition: all 0.3s;
+            position: relative; overflow: hidden;
+        }
+        .nav-cta::before {
+            content: ''; position: absolute; top: 0; left: -100%;
+            width: 100%; height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+            transition: left 0.5s;
+        }
+        .nav-cta:hover::before { left: 100%; }
+        .nav-cta:hover { background: var(--accent-light); transform: translateY(-2px); box-shadow: 0 8px 24px rgba(200,121,65,0.3); }
+        .menu-toggle {
+            width: 40px; height: 40px; border-radius: 10px;
+            background: var(--bg-card); border: 1px solid var(--border);
+            color: var(--text); font-size: 20px; display: flex;
+            align-items: center; justify-content: center; cursor: pointer;
+            transition: all 0.3s;
+        }
+        .menu-toggle:hover { border-color: var(--accent); color: var(--accent); transform: rotate(90deg); }
+
+        .mobile-menu {
+            position: fixed; inset: 0; z-index: 2000; background: rgba(10,10,12,0.98);
+            backdrop-filter: blur(20px);
+            display: none; flex-direction: column; padding: 100px 28px 40px; gap: 8px;
+        }
+        .mobile-menu.open { display: flex; animation: fadeIn 0.4s; }
+        .mobile-menu a {
+            font-size: 28px; font-weight: 700; color: var(--text-muted);
+            text-decoration: none; padding: 12px 0; border-bottom: 1px solid var(--border);
+            transition: all 0.3s; cursor: pointer;
+            transform: translateX(-20px); opacity: 0;
+        }
+        .mobile-menu.open a { animation: slideInLeft 0.5s forwards; }
+        .mobile-menu.open a:nth-child(2) { animation-delay: 0.05s; }
+        .mobile-menu.open a:nth-child(3) { animation-delay: 0.1s; }
+        .mobile-menu.open a:nth-child(4) { animation-delay: 0.15s; }
+        .mobile-menu.open a:nth-child(5) { animation-delay: 0.2s; }
+        .mobile-menu.open a:nth-child(6) { animation-delay: 0.25s; }
+        .mobile-menu a:hover { color: var(--accent); padding-left: 12px; }
+        .menu-close {
+            position: absolute; top: 14px; right: 20px; width: 40px; height: 40px;
+            border-radius: 10px; background: var(--bg-card); border: 1px solid var(--border);
+            color: var(--text); font-size: 22px; display: flex;
+            align-items: center; justify-content: center; cursor: pointer;
+            transition: all 0.3s;
+        }
+        .menu-close:hover { transform: rotate(90deg); border-color: var(--accent); color: var(--accent); }
+
+        /* ===== HERO ===== */
+        .hero {
+            min-height: 100vh; display: flex; flex-direction: column; justify-content: center;
+            padding: 120px 24px 80px; position: relative; overflow: hidden;
+        }
+        .hero-bg-blob {
+            position: absolute; border-radius: 50%; filter: blur(80px); opacity: 0.4;
+            pointer-events: none;
+        }
+        .hero-bg-blob-1 {
+            width: 600px; height: 600px; background: radial-gradient(circle, rgba(200,121,65,0.3), transparent 70%);
+            top: -200px; right: -100px; animation: blobMove 20s ease-in-out infinite;
+        }
+        .hero-bg-blob-2 {
+            width: 500px; height: 500px; background: radial-gradient(circle, rgba(200,121,65,0.15), transparent 70%);
+            bottom: -150px; left: -100px; animation: blobMove 25s ease-in-out infinite reverse;
+        }
+        .hero-bg-blob-3 {
+            width: 300px; height: 300px; background: radial-gradient(circle, rgba(200,121,65,0.2), transparent 70%);
+            top: 50%; left: 50%; transform: translate(-50%, -50%);
+            animation: blobMove 18s ease-in-out infinite;
+        }
+        .hero::before {
+            content: ''; position: absolute; inset: 0;
+            background: radial-gradient(ellipse 80% 50% at 50% 0%, rgba(200,121,65,0.1) 0%, transparent 60%);
+            pointer-events: none;
+        }
+        .hero-content { position: relative; z-index: 1; max-width: 720px; margin: 0 auto; text-align: center; }
+        .label {
+            display: inline-block; font-size: 11px; text-transform: uppercase;
+            letter-spacing: 3px; color: var(--accent); font-weight: 700;
+            margin-bottom: 20px; padding: 8px 16px; border: 1px solid rgba(200,121,65,0.3);
+            border-radius: 100px;
+            background: rgba(200,121,65,0.05);
+            backdrop-filter: blur(10px);
+            animation: fadeUp 0.8s ease-out, borderGlow 3s ease-in-out infinite;
+        }
+        .hero h1 {
+            font-size: clamp(32px, 7vw, 64px); font-weight: 800; line-height: 1.1;
+            letter-spacing: -2px; margin-bottom: 20px;
+            animation: fadeUp 0.8s ease-out 0.2s both;
+        }
+        .hero h1 span { 
+            color: var(--accent); 
+            background: linear-gradient(90deg, var(--accent), var(--accent-light), var(--accent));
+            background-size: 200% auto;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            animation: gradientShift 4s ease infinite;
+        }
+        .hero p {
+            font-size: 17px; color: var(--text-muted); max-width: 520px;
+            margin: 0 auto 36px; line-height: 1.7;
+            animation: fadeUp 0.8s ease-out 0.4s both;
+        }
+        .hero-buttons { 
+            display: flex; gap: 12px; justify-content: center; flex-wrap: wrap;
+            animation: fadeUp 0.8s ease-out 0.6s both;
+        }
+        .btn {
+            display: inline-flex; align-items: center; justify-content: center;
+            padding: 15px 32px; border-radius: 100px; font-size: 14px;
+            font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px;
+            border: none; cursor: pointer; transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1); 
+            text-decoration: none; position: relative; overflow: hidden;
+        }
+        .btn-primary {
+            background: var(--accent); color: #fff; 
+            animation: pulse 3s infinite;
+            box-shadow: 0 4px 20px rgba(200,121,65,0.3);
+        }
+        .btn-primary::before {
+            content: ''; position: absolute; top: 0; left: -100%;
+            width: 100%; height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+            transition: left 0.6s;
+        }
+        .btn-primary:hover::before { left: 100%; }
+        .btn-primary:hover { 
+            background: var(--accent-light); 
+            transform: translateY(-3px); 
+            box-shadow: 0 12px 40px rgba(200,121,65,0.4);
+        }
+        .btn-ghost {
+            background: rgba(255,255,255,0.03); color: var(--text); 
+            border: 1px solid var(--border-light);
+            backdrop-filter: blur(10px);
+        }
+        .btn-ghost:hover { 
+            border-color: var(--accent); 
+            color: var(--accent); 
+            background: rgba(200,121,65,0.08);
+            transform: translateY(-3px);
+            box-shadow: 0 8px 24px rgba(200,121,65,0.1);
+        }
+
+        .hero-stats {
+            display: flex; justify-content: center; gap: 48px; margin-top: 60px;
+            animation: fadeUp 0.8s ease-out 0.8s both;
+        }
+        .hero-stat {
+            text-align: center;
+            position: relative;
+        }
+        .hero-stat::after {
+            content: ''; position: absolute; right: -24px; top: 50%; transform: translateY(-50%);
+            width: 1px; height: 40px; background: var(--border);
+        }
+        .hero-stat:last-child::after { display: none; }
+        .hero-stat-number {
+            font-size: 36px; font-weight: 800;
+            line-height: 1;
+            background: linear-gradient(135deg, var(--accent), var(--accent-light));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .hero-stat-label {
+            font-size: 12px; color: var(--text-muted); margin-top: 8px;
+            text-transform: uppercase; letter-spacing: 1px;
+        }
+
+        /* ===== SECTION ===== */
+        .section { padding: 100px 24px; max-width: 1200px; margin: 0 auto; }
+        .section-header { text-align: center; margin-bottom: 56px; }
+        .section-header .label { margin-bottom: 16px; }
+        .section-header h2 { 
+            font-size: clamp(28px, 5vw, 42px); font-weight: 800; letter-spacing: -1px;
+            background: linear-gradient(180deg, var(--text) 0%, rgba(240,236,228,0.7) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        /* ===== WORKS ===== */
+        .works-grid { display: grid; grid-template-columns: 1fr; gap: 24px; perspective: 1000px; }
+        .work-card {
+            background: var(--bg-card); border: 1px solid var(--border);
+            border-radius: var(--radius); overflow: hidden; transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+            display: flex; flex-direction: column;
+            transform-style: preserve-3d;
+        }
+        .work-card:hover { 
+            transform: translateY(-8px) rotateX(2deg); 
+            border-color: rgba(200,121,65,0.4);
+            box-shadow: 0 20px 60px rgba(0,0,0,0.4), 0 0 40px rgba(200,121,65,0.08);
+        }
+        .work-preview {
+            height: 220px; display: flex; align-items: center; justify-content: center;
+            font-size: 72px; position: relative; overflow: hidden;
+            transition: all 0.5s;
+        }
+        .work-card:hover .work-preview { transform: scale(1.05); }
+        .work-preview.bg-1 { background: linear-gradient(135deg, #1a1816, #2a2622); }
+        .work-preview.bg-2 { background: linear-gradient(135deg, #161a1e, #222830); }
+        .work-preview.bg-3 { background: linear-gradient(135deg, #1a1616, #2a2222); }
+        .work-preview::after {
+            content: ''; position: absolute; inset: 0;
+            background: linear-gradient(180deg, transparent 50%, rgba(10,10,12,0.8) 100%);
+            opacity: 0; transition: opacity 0.4s;
+        }
+        .work-card:hover .work-preview::after { opacity: 1; }
+        .work-body { padding: 28px; flex: 1; display: flex; flex-direction: column; }
+        .work-body h3 { font-size: 20px; font-weight: 700; margin-bottom: 8px; transition: color 0.3s; }
+        .work-card:hover .work-body h3 { color: var(--accent-light); }
+        .work-body p { color: var(--text-muted); font-size: 14px; margin-bottom: 16px; flex: 1; line-height: 1.6; }
+        .work-tags { display: flex; gap: 8px; margin-bottom: 20px; flex-wrap: wrap; }
+        .work-tag {
+            font-size: 11px; padding: 5px 14px; border-radius: 100px;
+            background: var(--surface); border: 1px solid var(--border); color: var(--text-muted);
+            transition: all 0.3s;
+        }
+        .work-card:hover .work-tag {
+            border-color: rgba(200,121,65,0.3);
+            color: var(--accent-light);
+        }
+        .work-link {
+            display: inline-flex; align-items: center; justify-content: center; width: 100%;
+            padding: 14px; border-radius: 12px; background: rgba(200,121,65,0.08);
+            border: 1px solid rgba(200,121,65,0.25); color: var(--accent);
+            font-size: 14px; font-weight: 700; text-decoration: none; transition: all 0.4s;
+            position: relative; overflow: hidden;
+            gap: 8px;
+        }
+        .work-link::after {
+            content: '→'; transition: transform 0.3s;
+        }
+        .work-link:hover::after { transform: translateX(4px); }
+        .work-link:hover { 
+            background: var(--accent); 
+            color: #fff; 
+            box-shadow: 0 8px 24px rgba(200,121,65,0.3);
+            transform: translateY(-2px);
+            border-color: var(--accent);
+        }
+
+        /* ===== FEATURES ===== */
+        .features-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+        .feature { 
+            text-align: center; padding: 32px 20px; background: var(--bg-card);
+            border: 1px solid var(--border); border-radius: var(--radius);
+            transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+            position: relative; overflow: hidden;
+        }
+        .feature::before {
+            content: ''; position: absolute; top: 0; left: 0; right: 0; height: 2px;
+            background: linear-gradient(90deg, transparent, var(--accent), transparent);
+            transform: scaleX(0); transition: transform 0.5s;
+        }
+        .feature:hover::before { transform: scaleX(1); }
+        .feature:hover {
+            transform: translateY(-6px);
+            border-color: rgba(200,121,65,0.3);
+            box-shadow: 0 16px 48px rgba(0,0,0,0.3);
+        }
+        .feature-icon { 
+            font-size: 36px; margin-bottom: 16px; 
+            display: inline-block;
+            transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .feature:hover .feature-icon { transform: scale(1.2) rotate(-5deg); }
+        .feature h4 { font-size: 15px; font-weight: 700; margin-bottom: 8px; }
+        .feature p { font-size: 13px; color: var(--text-muted); line-height: 1.6; }
+
+        /* ===== PRICING ===== */
+        .pricing-grid { 
+            display: grid; grid-template-columns: 1fr; gap: 24px; 
+            max-width: 800px; margin: 0 auto; 
+            padding-top: 28px;
+        }
+        .pricing-card {
+            background: var(--bg-card); border: 1px solid var(--border);
+            border-radius: var(--radius); padding: 40px 32px; 
+            transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+            position: relative;
+            display: flex;
+            flex-direction: column;
+        }
+        .pricing-card::before {
+            content: ''; position: absolute; top: -50%; left: -50%;
+            width: 200%; height: 200%;
+            background: radial-gradient(circle, rgba(200,121,65,0.03) 0%, transparent 70%);
+            opacity: 0; transition: opacity 0.5s;
+        }
+        .pricing-card:hover::before { opacity: 1; }
+        .pricing-card:hover { 
+            border-color: rgba(200,121,65,0.3);
+            transform: translateY(-6px);
+            box-shadow: 0 24px 64px rgba(0,0,0,0.4);
+        }
+        .pricing-card.popular { 
+            border-color: var(--accent); 
+            position: relative;
+            box-shadow: 0 0 60px rgba(200,121,65,0.1);
+        }
+        .pricing-card.popular::after {
+            content: ''; position: absolute; inset: -1px; border-radius: var(--radius);
+            padding: 1px;
+            background: linear-gradient(180deg, var(--accent), transparent 60%);
+            -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+            mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+            -webkit-mask-composite: xor; mask-composite: exclude;
+            pointer-events: none;
+        }
+        .popular-badge {
+            position: absolute; top: -14px; left: 50%; transform: translateX(-50%);
+            background: linear-gradient(135deg, var(--accent), var(--accent-light));
+            color: #fff; padding: 6px 20px;
+            border-radius: 100px; font-size: 11px; font-weight: 700; text-transform: uppercase;
+            box-shadow: 0 4px 16px rgba(200,121,65,0.4);
+            animation: float 3s ease-in-out infinite;
+            z-index: 2;
+            white-space: nowrap;
+        }
+        .pricing-card h3 { font-size: 22px; font-weight: 800; margin-bottom: 4px; }
+        
+        .price-old {
+            font-size: 20px; color: var(--text-muted); 
+            opacity: 0.5; margin-bottom: 2px;
+            display: inline-flex; align-items: center; gap: 10px;
+        }
+        .price-old span {
+            position: relative;
+        }
+        .price-old span::after {
+            content: ''; position: absolute; left: 0; top: 50%; width: 100%; height: 2px;
+            background: var(--accent); opacity: 0.7;
+        }
+        .price-discount {
+            display: inline-block; background: rgba(200,121,65,0.15); color: var(--accent-light);
+            padding: 3px 10px; border-radius: 6px; font-size: 12px; font-weight: 700;
+            border: 1px solid rgba(200,121,65,0.3);
+        }
+        .pricing-card .price { 
+            font-size: 40px; font-weight: 800; 
+            background: linear-gradient(135deg, var(--accent), var(--accent-light));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin: 4px 0 20px;
+        }
+        .pricing-card .price span { font-size: 16px; color: var(--text-muted); font-weight: 400; -webkit-text-fill-color: var(--text-muted); }
+        
+        .urgent-badge {
+            display: flex; align-items: center; gap: 8px;
+            background: rgba(200,121,65,0.08); border: 1px solid rgba(200,121,65,0.2);
+            border-radius: 10px; padding: 10px 16px; margin-bottom: 24px;
+            font-size: 13px; color: var(--accent-light);
+        }
+        .urgent-badge .dot {
+            width: 8px; height: 8px; background: var(--accent);
+            border-radius: 50%; box-shadow: 0 0 8px var(--accent);
+            animation: pulse-soft 1.5s ease-in-out infinite;
+            flex-shrink: 0;
+        }
+        @keyframes pulse-soft {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.4; }
+        }
+        
+        .pricing-card ul { 
+            list-style: none; 
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            margin-bottom: 0;
+        }
+        .pricing-card > a.btn {
+            margin-top: auto;
+        }
+        .pricing-card ul li {
+            padding: 10px 0; font-size: 14px; color: var(--text-muted);
+            display: flex; align-items: center; gap: 12px;
+            transition: all 0.3s;
+        }
+        .pricing-card:hover ul li { color: var(--text); }
+        .pricing-card ul li::before { 
+            content: '✓'; color: var(--accent); font-weight: 700; 
+            font-size: 16px; transition: transform 0.3s;
+        }
+        .pricing-card:hover ul li::before { transform: scale(1.3); }
+
+        /* ===== STEPS ===== */
+        .steps-grid { display: grid; grid-template-columns: 1fr; gap: 24px; position: relative; }
+        .steps-grid::before {
+            content: ''; position: absolute; left: 36px; top: 0; bottom: 0;
+            width: 2px; background: linear-gradient(180deg, var(--accent), transparent);
+            opacity: 0.3;
+        }
+        .step {
+            display: flex; gap: 24px; padding: 32px; background: var(--bg-card);
+            border: 1px solid var(--border); border-radius: var(--radius);
+            transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+            position: relative;
+        }
+        .step:hover {
+            border-color: rgba(200,121,65,0.3);
+            transform: translateX(8px);
+            box-shadow: 0 16px 48px rgba(0,0,0,0.3);
+        }
+        .step-num {
+            width: 52px; height: 52px; border-radius: 14px; 
+            background: linear-gradient(135deg, var(--surface), var(--bg-card));
+            border: 1px solid var(--border); display: flex; align-items: center;
+            justify-content: center; font-size: 18px; font-weight: 800;
+            color: var(--accent); flex-shrink: 0;
+            position: relative; z-index: 1;
+            transition: all 0.4s;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+        }
+        .step:hover .step-num {
+            background: linear-gradient(135deg, var(--accent), var(--accent-light));
+            color: #fff;
+            transform: scale(1.1) rotate(5deg);
+            box-shadow: 0 8px 24px rgba(200,121,65,0.4);
+        }
+        .step h4 { font-size: 18px; font-weight: 700; margin-bottom: 8px; transition: color 0.3s; }
+        .step:hover h4 { color: var(--accent-light); }
+        .step p { font-size: 14px; color: var(--text-muted); line-height: 1.7; }
+
+        /* ===== CONTACT ===== */
+        .contact-grid { display: grid; grid-template-columns: 1fr; gap: 48px; }
+        .contact-info h3 { font-size: 28px; margin-bottom: 12px; }
+        .contact-info > p { color: var(--text-muted); margin-bottom: 32px; font-size: 15px; line-height: 1.7; }
+        .contact-row { 
+            display: flex; align-items: center; gap: 18px; margin-bottom: 24px;
+            padding: 16px; border-radius: 14px;
+            transition: all 0.4s;
+        }
+        .contact-row:hover {
+            background: var(--bg-card);
+            transform: translateX(8px);
+        }
+        .contact-icon {
+            width: 52px; height: 52px; border-radius: 14px; 
+            background: linear-gradient(135deg, var(--surface), var(--bg-card));
+            border: 1px solid var(--border); display: flex; align-items: center;
+            justify-content: center; font-size: 22px; flex-shrink: 0;
+            transition: all 0.4s;
+        }
+        .contact-row:hover .contact-icon {
+            background: linear-gradient(135deg, var(--accent), var(--accent-light));
+            transform: scale(1.1) rotate(-5deg);
+            box-shadow: 0 8px 24px rgba(200,121,65,0.3);
+        }
+        .contact-row div strong { display: block; font-size: 14px; margin-bottom: 4px; }
+        .contact-row div a { font-size: 14px; color: var(--text-muted); text-decoration: none; transition: all 0.3s; }
+        .contact-row div a:hover { color: var(--accent); }
+        
+        .contact-form { 
+            background: var(--bg-card); border: 1px solid var(--border); 
+            border-radius: var(--radius); padding: 40px;
+            position: relative; overflow: hidden;
+            transition: all 0.5s;
+        }
+        .contact-form::before {
+            content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px;
+            background: linear-gradient(90deg, var(--accent), var(--accent-light), var(--accent));
+            background-size: 200% auto;
+            animation: gradientShift 3s linear infinite;
+        }
+        .contact-form:hover {
+            border-color: rgba(200,121,65,0.2);
+            box-shadow: 0 24px 64px rgba(0,0,0,0.3);
+        }
+        .form-group { margin-bottom: 20px; position: relative; }
+        .form-group label { 
+            display: block; font-size: 11px; text-transform: uppercase; 
+            letter-spacing: 1.5px; color: var(--text-muted); margin-bottom: 10px; 
+            font-weight: 600; transition: color 0.3s;
+        }
+        .form-group:focus-within label { color: var(--accent); }
+        
+        .form-group input, .form-group select, .form-group textarea {
+            width: 100%; background: var(--surface); border: 1px solid var(--border);
+            border-radius: 14px; padding: 16px 18px 16px 48px; color: var(--text);
+            font-size: 15px; font-family: 'Inter', sans-serif; outline: none; 
+            transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+            appearance: none;
+        }
+        .form-group input:focus, .form-group select:focus, .form-group textarea:focus { 
+            border-color: var(--accent); 
+            box-shadow: 0 0 0 4px rgba(200,121,65,0.1), inset 0 1px 2px rgba(200,121,65,0.05);
+            transform: translateY(-2px);
+        }
+        .form-group input::placeholder { color: #555; }
+        .form-group textarea { resize: vertical; min-height: 120px; padding-left: 18px; }
+        
+        .form-group select {
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' fill='%23c87941' viewBox='0 0 16 16'%3E%3Cpath d='M8 11L3 6h10l-5 5z'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: right 18px center;
+            background-size: 14px;
+            cursor: pointer;
+            padding-right: 44px;
+        }
+        .form-group select option,
+        .form-group select optgroup {
+            background: #141418;
+            color: #f0ece4;
+            padding: 14px 16px;
+            font-size: 15px;
+            border: none;
+        }
+        .form-group select option:checked {
+            background: #c87941;
+            color: #fff;
+        }
+        .form-group select option:first-child {
+            color: #8a8580;
+        }
+        .form-group select option {
+            background: var(--bg-card);
+            color: var(--text);
+            padding: 10px;
+        }
+        
+        .form-group .field-icon {
+            position: absolute; left: 18px; bottom: 16px;
+            color: var(--text-muted); font-size: 18px;
+            transition: all 0.3s; pointer-events: none;
+        }
+        .form-group:focus-within .field-icon { color: var(--accent); transform: scale(1.1); }
+        .form-group textarea ~ .field-icon { bottom: auto; top: 46px; }
+        
+        .form-submit { width: 100%; margin-top: 12px; }
+
+        /* ===== MODAL THANK YOU ===== */
+        .modal-overlay {
+            position: fixed; inset: 0; z-index: 3000;
+            background: rgba(10,10,12,0.85);
+            backdrop-filter: blur(12px);
+            display: none; align-items: center; justify-content: center;
+            padding: 20px;
+            animation: overlayIn 0.3s ease;
+        }
+        .modal-overlay.active { display: flex; }
+        .modal-card {
+            background: var(--bg-card); border: 1px solid var(--border);
+            border-radius: 24px; padding: 48px 40px; max-width: 420px; width: 100%;
+            text-align: center; position: relative;
+            box-shadow: 0 32px 80px rgba(0,0,0,0.5), 0 0 60px rgba(200,121,65,0.1);
+            animation: modalIn 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .modal-card::before {
+            content: ''; position: absolute; top: 0; left: 0; right: 0; height: 4px;
+            background: linear-gradient(90deg, var(--accent), var(--accent-light));
+            border-radius: 24px 24px 0 0;
+        }
+        .modal-icon {
+            width: 72px; height: 72px; margin: 0 auto 24px;
+            background: linear-gradient(135deg, rgba(74,222,128,0.15), rgba(74,222,128,0.05));
+            border: 2px solid rgba(74,222,128,0.3);
+            border-radius: 50%; display: flex; align-items: center; justify-content: center;
+            position: relative;
+        }
+        .modal-icon::after {
+            content: ''; width: 20px; height: 10px;
+            border-left: 3px solid var(--success);
+            border-bottom: 3px solid var(--success);
+            transform: rotate(-45deg) translate(1px, -2px);
+            animation: checkmark 0.5s ease 0.2s both;
+        }
+        .modal-card h3 {
+            font-size: 24px;
+            font-weight: 800;
+            margin-bottom: 12px;
+            background: linear-gradient(135deg, var(--text), var(--text-muted));
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .modal-card p {
+            color: var(--text-muted); font-size: 15px; line-height: 1.7; margin-bottom: 28px;
+        }
+        .modal-close {
+            background: var(--surface); color: var(--text);
+            border: 1px solid var(--border); padding: 14px 32px;
+            border-radius: 100px; font-size: 14px; font-weight: 700;
+            cursor: pointer; transition: all 0.3s;
+            font-family: 'Inter', sans-serif;
+        }
+        .modal-close:hover {
+            border-color: var(--accent); color: var(--accent);
+            transform: translateY(-2px);
+        }
+
+        /* ===== FOOTER ===== */
+        footer { 
+            background: var(--bg-light); border-top: 1px solid var(--border); 
+            padding: 48px 24px; text-align: center; color: var(--text-muted); 
+            font-size: 13px; position: relative; overflow: hidden;
+        }
+        footer::before {
+            content: ''; position: absolute; top: 0; left: 50%; transform: translateX(-50%);
+            width: 200px; height: 1px;
+            background: linear-gradient(90deg, transparent, var(--accent), transparent);
+        }
+
+        /* ===== DESKTOP ===== */
+        .work-preview svg {
+            transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .work-card:hover .work-preview svg {
+            transform: scale(1.15) rotate(-5deg);
+            filter: drop-shadow(0 0 36px rgba(200,121,65,0.5)) !important;
+        }
+        @media (min-width: 768px) {
+            .nav-links, .nav-cta { display: flex; }
+            .menu-toggle { display: none; }
+            .works-grid { grid-template-columns: repeat(3, 1fr); }
+            .features-grid { grid-template-columns: repeat(4, 1fr); }
+            .pricing-grid { grid-template-columns: 1fr 1fr; padding-top: 24px; }
+            .steps-grid { grid-template-columns: repeat(2, 1fr); }
+            .steps-grid::before { display: none; }
+            .contact-grid { grid-template-columns: 1fr 1fr; align-items: start; }
+            .section { padding: 120px 40px; }
+            .hero-stats { gap: 60px; }
+            .hero-stat::after { right: -30px; height: 50px; }
+        }
+    </style>
+<base target="_blank">
+</head>
+<body>
+
+    <!-- Thank You Modal -->
+    <div class="modal-overlay" id="thankYouModal" onclick="closeModal(event)">
+        <div class="modal-card" onclick="event.stopPropagation()">
+            <div class="modal-icon"></div>
+            <h3>Дякуємо за заявку!</h3>
+            <p>Я отримав вашу заявку та зв'яжуся з вами найближчим часом. Зазвичай відповідаю протягом години.</p>
+            <button class="modal-close" onclick="closeModal()">Чудово</button>
+        </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <button class="menu-close" onclick="toggleMenu()">✕</button>
+        <a onclick="scrollToId('works'); toggleMenu()">Роботи</a>
+        <a onclick="scrollToId('pricing'); toggleMenu()">Тарифи</a>
+        <a onclick="scrollToId('process'); toggleMenu()">Процес</a>
+        <a onclick="scrollToId('contact'); toggleMenu()">Контакти</a>
+        <a href="https://t.me/andrrrr_a" target="_blank" style="color:var(--accent)">Написати в Telegram</a>
+    </div>
+
+    <!-- Nav -->
+    <nav id="navbar">
+        <a href="#" class="logo">
+            <div class="logo-icon">
+                <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="50" cy="50" r="48" fill="none" stroke="#c87941" stroke-width="2.5"/>
+                    <circle cx="50" cy="50" r="36" fill="none" stroke="#c87941" stroke-width="1.2"/>
+                    <text x="50" y="66" text-anchor="middle" fill="#c87941" font-size="40" font-family="Georgia, 'Times New Roman', serif" font-weight="bold">AN</text>
+                    <text x="50" y="24" text-anchor="middle" fill="#c87941" font-size="11" font-family="monospace" font-weight="bold">&lt;/&gt;</text>
+                    <text x="50" y="88" text-anchor="middle" fill="#c87941" font-size="11" font-family="monospace" font-weight="bold">&lt;/&gt;</text>
+                    <circle cx="22" cy="50" r="2.5" fill="none" stroke="#c87941" stroke-width="1.5"/>
+                    <line x1="25" y1="50" x2="32" y2="50" stroke="#c87941" stroke-width="1.5"/>
+                    <circle cx="78" cy="50" r="2.5" fill="none" stroke="#c87941" stroke-width="1.5"/>
+                    <line x1="68" y1="50" x2="75" y2="50" stroke="#c87941" stroke-width="1.5"/>
+                </svg>
+            </div>
+            Sites
+        </a>
+        <ul class="nav-links">
+            <li><a onclick="scrollToId('works')">Роботи</a></li>
+            <li><a onclick="scrollToId('pricing')">Тарифи</a></li>
+            <li><a onclick="scrollToId('process')">Процес</a></li>
+            <li><a onclick="scrollToId('contact')">Контакти</a></li>
+        </ul>
+        <a href="https://t.me/andrrrr_a" target="_blank" class="nav-cta">Написати</a>
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="hero-bg-blob hero-bg-blob-1"></div>
+        <div class="hero-bg-blob hero-bg-blob-2"></div>
+        <div class="hero-bg-blob hero-bg-blob-3"></div>
+        
+        <div class="hero-content">
+            <div class="label">Веб-студія під ключ</div>
+            <h1>Сайти, які <span>продають</span> для вашого бізнесу</h1>
+            <p>Готові лендінги та сайти-візитки для кафе, салонів, СТО та іншого. Швидко. Якісно. Без переплат.</p>
+            <div class="hero-buttons">
+                <a href="https://t.me/andrrrr_a" target="_blank" class="btn btn-primary">Замовити сайт</a>
+                <a onclick="scrollToId('works')" class="btn btn-ghost">Дивитись роботи</a>
+            </div>
+            
+            <div class="hero-stats">
+                <div class="hero-stat">
+                    <div class="hero-stat-number">3+</div>
+                    <div class="hero-stat-label">Готових проєктів</div>
+                </div>
+                <div class="hero-stat">
+                    <div class="hero-stat-number">1-3</div>
+                    <div class="hero-stat-label">Днів на створення</div>
+                </div>
+                <div class="hero-stat">
+                    <div class="hero-stat-number">100%</div>
+                    <div class="hero-stat-label">Адаптивність</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Works -->
+    <section class="section" id="works">
+        <div class="section-header reveal">
+            <div class="label">Портфоліо</div>
+            <h2>Готові шаблони</h2>
+        </div>
+        <div class="works-grid">
+            <div class="work-card reveal stagger-1">
+                <div class="work-preview bg-1">
+                    <svg width="72" height="72" viewBox="0 0 24 24" fill="none" stroke="#c87941" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="filter: drop-shadow(0 0 24px rgba(200,121,65,0.35));">
+                        <path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2"/>
+                        <circle cx="6.5" cy="17.5" r="2.5"/>
+                        <circle cx="16.5" cy="17.5" r="2.5"/>
+                    </svg>
+                </div>
+                <div class="work-body">
+                    <h3>Автосервіс</h3>
+                    <p>Сайт для СТО з прайсом, послугами та онлайн-записом. Ідеально для шиномонтажу та автосервісу.</p>
+                    <div class="work-tags">
+                        <span class="work-tag">Адаптивний</span>
+                        <span class="work-tag">Форма запису</span>
+                    </div>
+                    <a href="https://car-service-an.netlify.app/" target="_blank" class="work-link">Переглянути демо</a>
+                </div>
+            </div>
+            <div class="work-card reveal stagger-2">
+                <div class="work-preview bg-2">
+                    <svg width="72" height="72" viewBox="0 0 24 24" fill="none" stroke="#c87941" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="filter: drop-shadow(0 0 24px rgba(200,121,65,0.35));">
+                        <circle cx="6" cy="6" r="3"/>
+                        <circle cx="6" cy="18" r="3"/>
+                        <line x1="20" y1="4" x2="8.12" y2="15.88"/>
+                        <line x1="14.47" y1="14.48" x2="20" y2="20"/>
+                        <line x1="8.12" y1="8.12" x2="12" y2="12"/>
+                    </svg>
+                </div>
+                <div class="work-body">
+                    <h3>Барбершоп</h3>
+                    <p>Багатосторінковий сайт з прайсом, майстрами, галереєю та багатоступінчастою формою запису.</p>
+                    <div class="work-tags">
+                        <span class="work-tag">SPA</span>
+                        <span class="work-tag">Онлайн-запис</span>
+                    </div>
+                    <a href="https://cooper-blade-an.netlify.app/" target="_blank" class="work-link">Переглянути демо</a>
+                </div>
+            </div>
+            <div class="work-card reveal stagger-3">
+                <div class="work-preview bg-3">
+                    <svg width="72" height="72" viewBox="0 0 24 24" fill="none" stroke="#c87941" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="filter: drop-shadow(0 0 24px rgba(200,121,65,0.35));">
+                        <rect x="3" y="9" width="18" height="10" rx="5"/>
+                        <path d="M3 14h18"/>
+                        <path d="M12 9v10"/>
+                        <circle cx="12" cy="7" r="2" fill="#c87941" stroke="none"/>
+                    </svg>
+                </div>
+                <div class="work-body">
+                    <h3>Доставка їжі</h3>
+                    <p>Лендінг для суші-бару з меню, корзиною та формою замовлення. Оптимізовано під мобільні.</p>
+                    <div class="work-tags">
+                        <span class="work-tag">Кошик</span>
+                        <span class="work-tag">Меню</span>
+                    </div>
+                    <a href="https://sushi-demo-an.netlify.app/" target="_blank" class="work-link">Переглянути демо</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why -->
+    <section class="section" style="background:var(--bg-light); max-width:100%;">
+        <div style="max-width:1200px; margin:0 auto; padding:0 24px;">
+            <div class="section-header reveal">
+                <div class="label">Переваги</div>
+                <h2>Чому обирають мене</h2>
+            </div>
+            <div class="features-grid">
+                <div class="feature reveal stagger-1">
+                    <div class="feature-icon">⚡</div>
+                    <h4>Швидко</h4>
+                    <p>Готовий сайт за 1–3 дні, а не за 2 тижні</p>
+                </div>
+                <div class="feature reveal stagger-2">
+                    <div class="feature-icon">💰</div>
+                    <h4>Доступно</h4>
+                    <p>Від 4000 ₴. Без прихованих платежів</p>
+                </div>
+                <div class="feature reveal stagger-3">
+                    <div class="feature-icon">📱</div>
+                    <h4>Адаптивно</h4>
+                    <p>Ідеально виглядає на телефоні та комп'ютері</p>
+                </div>
+                <div class="feature reveal stagger-4">
+                    <div class="feature-icon">🔧</div>
+                    <h4>Підтримка</h4>
+                    <p>2 кола правок включено у вартість</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section class="section" id="pricing">
+        <div class="section-header reveal">
+            <div class="label">Тарифи</div>
+            <h2>Фіксована вартість</h2>
+        </div>
+        <div class="pricing-grid">
+            <div class="pricing-card reveal-left stagger-1">
+                <h3>Старт</h3>
+                <div class="price">5000 <span>₴</span></div>
+                <ul>
+                    <li>Адаптація готового шаблону</li>
+                    <li>До 5 блоків / сторінок</li>
+                    <li>Ваші тексти, фото, кольори</li>
+                    <li>Мобільна версія</li>
+                    <li>Встановлення на хостинг</li>
+                    <li>2 кола правок</li>
+                </ul>
+                <a href="https://t.me/andrrrr_a" target="_blank" class="btn btn-ghost" style="width:100%;">Обрати</a>
+            </div>
+            <div class="pricing-card popular reveal-right stagger-2">
+                <div class="popular-badge">Популярне</div>
+                <h3>Під ключ</h3>
+                <div class="price-old">
+                    <span>10000 ₴</span>
+                    <span class="price-discount">-25%</span>
+                </div>
+                <div class="price">7500 <span>₴</span></div>
+                <div class="urgent-badge">
+                    <span class="dot"></span>
+                    <span>Залишилось 2 місця на акцію</span>
+                </div>
+                <ul>
+                    <li>Все з пакету «Старт»</li>
+                    <li>Домен .com.ua на 1 рік</li>
+                    <li>Хостинг на 1 рік</li>
+                    <li>Форма заявки + Telegram-сповіщення</li>
+                    <li>Підключення Google Maps</li>
+                    <li>Пріоритетна підтримка</li>
+                </ul>
+                <a href="https://t.me/andrrrr_a" target="_blank" class="btn btn-primary" style="width:100%;">Обрати</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process -->
+    <section class="section" id="process" style="background:var(--bg-light); max-width:100%;">
+        <div style="max-width:1200px; margin:0 auto; padding:0 24px;">
+            <div class="section-header reveal">
+                <div class="label">Як це працює</div>
+                <h2>Процес створення</h2>
+            </div>
+            <div class="steps-grid">
+                <div class="step reveal stagger-1">
+                    <div class="step-num">01</div>
+                    <div>
+                        <h4>Ви обираєте шаблон</h4>
+                        <p>Дивитесь 3 готові демо та обираєте той, що підходить під ваш бізнес.</p>
+                    </div>
+                </div>
+                <div class="step reveal stagger-2">
+                    <div class="step-num">02</div>
+                    <div>
+                        <h4>Я адаптую під вас</h4>
+                        <p>Замінюю тексти, фото, ціни, кольори та контакти. Термін — 1-2 дні.</p>
+                    </div>
+                </div>
+                <div class="step reveal stagger-3">
+                    <div class="step-num">03</div>
+                    <div>
+                        <h4>Ви перевіряєте</h4>
+                        <p>Показую сайт на своєму хостингу. Вносимо правки. Ви затверджуєте.</p>
+                    </div>
+                </div>
+                <div class="step reveal stagger-4">
+                    <div class="step-num">04</div>
+                    <div>
+                        <h4>Запуск та передача</h4>
+                        <p>Переводжу на ваш домен. Ви отримуєте готовий сайт та доступи.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section" id="contact">
+        <div class="section-header reveal">
+            <div class="label">Контакти</div>
+            <h2>Зв'яжіться зі мною</h2>
+        </div>
+        <div class="contact-grid">
+            <div class="contact-info reveal-left">
+                <h3>Готові обговорити проєкт?</h3>
+                <p>Працюю з Німеччини, але це не заважає створювати сайти для українського бізнесу. Відповідаю швидко — пишіть у Telegram.</p>
+                <div class="contact-row">
+                    <div class="contact-icon">✈️</div>
+                    <div>
+                        <strong>Telegram</strong>
+                        <a href="https://t.me/andrrrr_a" target="_blank">@andrrrr_a</a>
+                    </div>
+                </div>
+                <div class="contact-row">
+                    <div class="contact-icon">📧</div>
+                    <div>
+                        <strong>Email</strong>
+                        <a href="mailto:nechesa1003mma@gmail.com">nechesa1003mma@gmail.com</a>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-form reveal-right">
+                <form id="orderForm" onsubmit="handleSubmit(event)">
+                    <div class="form-group">
+                        <label>Ваше ім'я</label>
+                        <span class="field-icon">👤</span>
+                        <input type="text" placeholder="Ім'я" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Телефон</label>
+                        <span class="field-icon">📱</span>
+                        <input type="tel" placeholder="+380 (__) ___-__-__" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Тип бізнесу</label>
+                        <span class="field-icon" style="bottom:auto; top:46px;">🏢</span>
+                        <select required>
+                            <option value="" disabled selected>Оберіть варіант</option>
+                            <option>Кафе / Ресторан / Доставка їжі</option>
+                            <option>Салон краси / Барбершоп</option>
+                            <option>Автосервіс / СТО</option>
+                            <option>Інше</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Повідомлення</label>
+                        <span class="field-icon">💬</span>
+                        <textarea placeholder="Коротко про проєкт"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary form-submit">Відправити заявку</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Сайти для бізнесу. Всі права захищені.</p>
+    </footer>
+
+    <script>
+        // Nav scroll effect
+        window.addEventListener('scroll', () => {
+            document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 40);
+        });
+
+        // Mobile menu
+        function toggleMenu() {
+            document.getElementById('mobileMenu').classList.toggle('open');
+            document.body.style.overflow = document.getElementById('mobileMenu').classList.contains('open') ? 'hidden' : '';
+        }
+
+        // Smooth scroll
+        function scrollToId(id) {
+            document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+        }
+
+        // Scroll reveal observer
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.reveal, .reveal-left, .reveal-right').forEach(el => {
+            observer.observe(el);
+        });
+
+        // 3D tilt effect for work cards (desktop only)
+        if (window.innerWidth > 768) {
+            document.querySelectorAll('.work-card').forEach(card => {
+                card.addEventListener('mousemove', (e) => {
+                    const rect = card.getBoundingClientRect();
+                    const x = e.clientX - rect.left;
+                    const y = e.clientY - rect.top;
+                    const centerX = rect.width / 2;
+                    const centerY = rect.height / 2;
+                    const rotateX = (y - centerY) / 20;
+                    const rotateY = (centerX - x) / 20;
+                    
+                    card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-8px)`;
+                });
+                
+                card.addEventListener('mouseleave', () => {
+                    card.style.transform = '';
+                });
+            });
+        }
+
+        // Send form to Telegram via Netlify Function
+async function handleSubmit(e) {
+    e.preventDefault();
+    const form = e.target;
+    const btn = form.querySelector('button[type="submit"]');
+    const originalText = btn.innerText;
+
+    btn.innerText = 'Відправляємо...';
+    btn.disabled = true;
+
+    const data = {
+        name: form.querySelector('input[type="text"]').value,
+        phone: form.querySelector('input[type="tel"]').value,
+        business: form.querySelector('select').value,
+        message: form.querySelector('textarea').value
+    };
+
+    try {
+        const res = await fetch('/.netlify/functions/telegram-bot', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(data)
+        });
+
+        const result = await res.json();
+
+        if (result.success) {
+            showThankYou();
+            form.reset();
+        } else {
+            alert('Помилка відправки. Напишіть мені в Telegram.');
+        }
+    } catch (err) {
+        alert('Помилка зєднання. Напишіть мені в Telegram.');
+    } finally {
+        btn.innerText = originalText;
+        btn.disabled = false;
+    }
+}
+
+// Thank you modal
+function showThankYou() {
+    document.getElementById('thankYouModal').classList.add('active');
+    document.body.style.overflow = 'hidden';
+}
+
+        function closeModal(event) {
+            if (!event || event.target === document.getElementById('thankYouModal') || event.target.closest('.modal-close')) {
+                document.getElementById('thankYouModal').classList.remove('active');
+                document.body.style.overflow = '';
+            }
+        }
+
+        // Close modal on Escape
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') closeModal();
+        });
+
+        // Parallax effect for hero blobs
+        window.addEventListener('scroll', () => {
+            const scrolled = window.pageYOffset;
+            const blobs = document.querySelectorAll('.hero-bg-blob');
+            blobs.forEach((blob, index) => {
+                const speed = 0.2 + (index * 0.1);
+                blob.style.transform = `translateY(${scrolled * speed}px)`;
+            });
+        });
+    </script>
+</body>
+</html>
