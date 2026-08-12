@@ -8,8 +8,8 @@ exports.handler = async (event, context) => {
   
       // ⚠️ ВСТАВЬТЕ СЮДА СВОИ ДАННЫЕ (быстрый способ)
       // Или используйте переменные окружения Netlify (безопасный способ)
-      const BOT_TOKEN = process.env.BOT_TOKEN || '8919160874:AAF0wcugxw95gVveUhH4qJeo3okpt9-pylI';
-      const CHAT_ID = process.env.CHAT_ID || '6125519621';
+      const BOT_TOKEN = process.env.BOT_TOKEN;
+      const CHAT_ID = process.env.CHAT_ID;
   
       const text = `🔔 <b>Нова заявка з сайту!</b>\n\n` +
         `👤 <b>Ім'я:</b> ${name}\n` +
